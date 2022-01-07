@@ -1,0 +1,27 @@
+<!-- write a JavaScript program add two number using function and input the number into textbox and output should be displayed as a message --> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Add two integers using JavaScript. </title>
+	<script type="text/javascript">
+		function addTwoNumbers(textbox1, textbox2)
+		{
+			var x = document.getElementById(textbox1).value;
+			var y = document.getElementById(textbox2).value;
+			var sum = 0;
+			sum = Number(x) + Number(y)
+			alert("Sum is: "+sum);
+		}
+	</script>
+</head>
+<body>
+	<center>
+<h1>Add two integer numbers using JavaScript.</h1>
+<b>Enter first number:</b> <br>
+<input type="text" id="textIn1"><br>
+<b>Enter second number:</b> <br>
+<input type="text" id="textIn2"><br><br>
+<input type="button" id="btnSum" value="calculate sum" onclick="addTwoNumbers('textIn1','textIn2')">
+</center>
+</body>
+</html>

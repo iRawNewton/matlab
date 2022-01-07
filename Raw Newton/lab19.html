@@ -1,0 +1,30 @@
+<!-- program to find factorial of a number using JavaScript -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Factorial of a number</title>
+
+	
+</head>
+<body>
+	<form method="post">
+		<label for="fact">Enter a number:</label>
+		<input type="number" name="fact" id="num"> <br>
+
+		<input type="button" value="calculate" onclick="factorial()" name=""> &nbsp; &nbsp; &nbsp; &nbsp;
+		<input type="number" id="result" readonly="readonly">
+	</form>
+	
+
+</body>
+<script type="text/javascript">
+	function factorial(){
+		var num = document.getElementById('num').value;
+		for (let i = num-1; i > 0; i--)
+		{
+			num = num * i;
+		}
+		document.getElementById('result').value = num;
+	}
+</script>
+</html>

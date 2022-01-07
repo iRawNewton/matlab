@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>A demonstration of how to access a number filed.</h3>
+	<input type="number" id="mynumber" value="2">
+	<p>Click the button to get the number of the number field.</p>
+	<button onclick="myfunction()">Try it</button>
+	<p id="demo"></p>
+	<script>
+		function myfunction() {
+			// body...
+			var x=document.getElementById("mynumber").value;
+			document.getElementById("demo").innerHTML=x;
+		}
+	</script>
+</body>
+</html>
