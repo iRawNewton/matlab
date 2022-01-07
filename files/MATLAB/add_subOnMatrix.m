@@ -13,3 +13,4 @@ f = a ./ b %element by element left division
 g = a .\ b %element by element right division
 h = a .^ b %element by element exponentiation
 i = a .'  %nonconjugated transpose
+j = a' %inverse of a matrix
